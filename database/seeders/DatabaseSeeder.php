@@ -18,9 +18,16 @@ class DatabaseSeeder extends Seeder
         Role::create(['name' => 'admin']);
         Role::create(['name' => 'user']);
 
+        $admin = \App\Models\User::factory()->create([
+            'name' => 'Admin',
+            'email' => 'admin@example.com',
+        ]);
+
+        $admin->syncRoles('admin');
+
         $user = \App\Models\User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'User',
+            'email' => 'user@example.com',
         ]);
 
         $user->syncRoles('user');
