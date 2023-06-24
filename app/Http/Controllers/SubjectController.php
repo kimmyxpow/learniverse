@@ -32,6 +32,11 @@ class SubjectController extends Controller
         return to_route('index')->with('success', 'Berhasil');
     }
 
+    public function show(Subject $subject)
+    {
+        return view('subjects.show', ['subject' => $subject]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      */

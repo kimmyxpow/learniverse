@@ -34,4 +34,5 @@ Route::middleware('auth')->group(function () {
     Route::middleware('role:admin')->group(function () {
         Route::resource('/subjects', SubjectController::class)->except(['show', 'index']);
     });
+    Route::resource('/subjects', SubjectController::class)->only('show');
 });
