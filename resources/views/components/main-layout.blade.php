@@ -18,8 +18,8 @@
 
             <div class="flex gap-6 items-center">
                 @if (auth()->check())
-                    <a class="text-zinc-600 hover:text-zinc-800 font-medium" href="#">Mata Pelajaran</a>
-                    <a class="text-zinc-600 hover:text-zinc-800 font-medium" href="#">Jenjang</a>
+                    {{-- <a class="text-zinc-600 hover:text-zinc-800 font-medium" href="#">Mata Pelajaran</a>
+                    <a class="text-zinc-600 hover:text-zinc-800 font-medium" href="#">Jenjang</a> --}}
                     <form action="{{ route('logout') }}" method="POST">
                         @method('DELETE')
                         @csrf
