@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Subject;
+use App\Models\UserReadModule;
 use Illuminate\Http\Request;
 
 class SubjectController extends Controller
@@ -34,6 +35,8 @@ class SubjectController extends Controller
 
     public function show(Subject $subject)
     {
+        // $hasRead = UserReadModule::where('user_id', auth()->id())->where('subject_id', $subject->id)->first();
+        UserReadModule::updateOrInsert(['user_id' => auth()->id()], ['subject_id' => $subject->id]);
         return view('subjects.show', ['subject' => $subject]);
     }
 
