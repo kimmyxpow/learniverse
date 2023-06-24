@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SubjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,12 +17,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('index');
 
 Route::middleware('guest')->group(function () {
-    Route::get('/login', [AuthController::class, 'login'])->name('login');
-    Route::get('/register', [AuthController::class, 'register'])->name('register');
-    Route::post('/login', [AuthController::class, 'authenticate'])->name('authenticate');
-    Route::post('/register', [AuthController::class, 'newUser'])->name('newUser');
+    Route::controller(AuthController::class)->group(function () {
+        Route::get('/login', 'login')->name('login');
+        Route::get('/register', 'register')->name('register');
+
+        Route::post('/login', 'authenticate')->name('authenticate');
+        Route::post('/register', 'newUser')->name('newUser');
+    });
 });
-Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::middleware('auth')->group(function () {
+    Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::middleware('role:admin')->group(function () {
+        Route::resource('/subjects', SubjectController::class)->except(['show', 'index']);
+    });
+});

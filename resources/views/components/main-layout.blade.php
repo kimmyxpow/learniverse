@@ -35,6 +35,8 @@
             <p>&copy; Learniverse 2023</p>
         </div>
     </footer>
+    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+    {{ $js ?? '' }}
 </body>
 
 </html>

@@ -21,3 +21,8 @@
         @apply text-zinc-800;
     }
 }
+
+.ck-editor__editable[role="textbox"] {
+    @apply prose prose-zinc max-w-none;
+    min-height: 500px;
+}

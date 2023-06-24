@@ -31,5 +31,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $user->syncRoles('user');
+
+        $this->call([SubjectSeeder::class]);
     }
 }
