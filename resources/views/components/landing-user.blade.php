@@ -22,7 +22,7 @@
         <h1 class="text-2xl font-black mb-4">Filter berdasarkan jenjang / mata pelajaran:</h1>
         <div class="flex flex-wrap gap-2">
             @forelse ([...$levels, ...$subjects] as $row)
-                <a href="#"
+                <a href="{{ route($row->level ? 'level' : 'subject', $row->level ? $row->level : $row->subject) }}"
                     class="text-lg py-2 px-4 rounded-full border text-zinc-800">{{ $row->level ? $row->level : $row->subject }}</a>
             @empty
                 <p>Empty</p>

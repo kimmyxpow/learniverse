@@ -153,6 +153,76 @@ class SubjectSeeder extends Seeder
                 'level' => 'Kuliah',
                 'content' => '<h2>Sistem Operasi</h2><p>Sistem Operasi mempelajari prinsip, struktur, dan fungsi dari sistem operasi pada komputer. Materi mencakup manajemen proses, manajemen memori, manajemen file, jaringan komputer, dan keamanan sistem.</p>',
                 'created_at' => now()
+            ],
+            [
+                "title" => "Pengenalan Komputer",
+                "subject" => "Informatika",
+                "level" => "SD",
+                "content" => "<h2>Pengenalan Komputer</h2><p>Pengenalan Komputer memberikan pemahaman dasar tentang komputer dan teknologi informasi. Materi mencakup perangkat keras, perangkat lunak, jaringan komputer, dan penggunaan komputer dalam kehidupan sehari-hari.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Dasar-Dasar Pemrograman",
+                "subject" => "Informatika",
+                "level" => "SD",
+                "content" => "<h2>Dasar-Dasar Pemrograman</h2><p>Dasar-Dasar Pemrograman mengenalkan konsep-konsep dasar pemrograman komputer melalui pemrograman visual. Materi mencakup algoritma, logika pemrograman, penggunaan blok-blok pemrograman, dan pembuatan program sederhana.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Web Development",
+                "subject" => "Informatika",
+                "level" => "Kuliah",
+                "content" => "<h2>Web Development</h2><p>Web Development membahas pengembangan aplikasi web. Materi mencakup HTML, CSS, JavaScript, penggunaan framework web, interaksi dengan basis data, dan konsep keamanan dalam pengembangan aplikasi web.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Data Science",
+                "subject" => "Informatika",
+                "level" => "Kuliah",
+                "content" => "<h2>Data Science</h2><p>Data Science mempelajari pengolahan, analisis, dan pemodelan data untuk mendapatkan wawasan dan informasi yang berharga. Materi mencakup penggunaan bahasa pemrograman seperti Python, teknik pengolahan data, eksplorasi data, dan pembuatan model prediktif.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Keamanan Informasi",
+                "subject" => "Informatika",
+                "level" => "SMA",
+                "content" => "<h2>Keamanan Informasi</h2><p>Keamanan Informasi membahas perlindungan dan pengamanan sistem informasi. Materi mencakup kebijakan keamanan, enkripsi, pengelolaan risiko, serangan keamanan, dan praktik pengamanan dalam lingkungan komputer dan jaringan.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Algoritma dan Pemrograman Lanjut",
+                "subject" => "Informatika",
+                "level" => "Kuliah",
+                "content" => "<h2>Algoritma dan Pemrograman Lanjut</h2><p>Algoritma dan Pemrograman Lanjut membahas desain dan analisis algoritma yang lebih kompleks serta pemrograman dalam bahasa tingkat tinggi. Materi mencakup pemrograman dinamis, algoritma pencarian dan pengurutan lanjutan, teknik pemrograman objek, dan kompleksitas algoritma.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Artificial Intelligence",
+                "subject" => "Informatika",
+                "level" => "Kuliah",
+                "content" => "<h2>Artificial Intelligence</h2><p>Artificial Intelligence (AI) mempelajari pengembangan sistem yang dapat melakukan tugas-tugas yang membutuhkan kecerdasan manusia. Materi mencakup machine learning, neural network, logika fuzzy, dan aplikasi AI dalam berbagai bidang.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Mobile App Development",
+                "subject" => "Informatika",
+                "level" => "Kuliah",
+                "content" => "<h2>Mobile App Development</h2><p>Mobile App Development membahas pengembangan aplikasi mobile untuk platform seperti Android dan iOS. Materi mencakup pemrograman mobile, desain antarmuka pengguna, penggunaan API, dan pengujian aplikasi mobile.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Database Management",
+                "subject" => "Informatika",
+                "level" => "SMA",
+                "content" => "<h2>Database Management</h2><p>Database Management membahas pengelolaan dan penggunaan basis data dalam aplikasi. Materi mencakup pemodelan basis data, desain skema database, bahasa query SQL, normalisasi, dan optimisasi kinerja basis data.</p>",
+                'created_at' => now()
+            ],
+            [
+                "title" => "Network Security",
+                "subject" => "Informatika",
+                "level" => "Kuliah",
+                "content" => "<h2>Network Security</h2><p>Network Security membahas keamanan jaringan komputer dan sistem komunikasi. Materi mencakup teknik kriptografi, protokol keamanan, deteksi serangan, pengelolaan identitas, dan manajemen risiko keamanan.</p>",
+                'created_at' => now()
             ]
         ]);
     }

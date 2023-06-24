@@ -35,4 +35,6 @@ Route::middleware('auth')->group(function () {
         Route::resource('/subjects', SubjectController::class)->except(['show', 'index']);
     });
     Route::resource('/subjects', SubjectController::class)->only('show');
+    Route::get('/level/{level}', [SubjectController::class, 'level'])->name('level');
+    Route::get('/subject/{subject}', [SubjectController::class, 'subject'])->name('subject');
 });

@@ -73,4 +73,16 @@ class SubjectController extends Controller
         $subject->delete();
         return to_route('index')->with('success', 'Berhasil');
     }
+
+    public function level($level)
+    {
+        $modules = Subject::latest()->orderBy('title', 'asc')->where('level', $level)->get();
+        return view('level', ['level' => $level, 'modules' => $modules]);
+    }
+
+    public function subject($subject)
+    {
+        $modules = Subject::latest()->orderBy('title', 'asc')->where('subject', $subject)->get();
+        return view('subject', ['subject' => $subject, 'modules' => $modules]);
+    }
 }
