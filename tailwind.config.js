@@ -6,7 +6,15 @@ export default {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ["Inter", "sans-serif"],
+            },
+            container: {
+                center: true,
+                padding: "2rem",
+            },
+        },
     },
     plugins: [],
 };
