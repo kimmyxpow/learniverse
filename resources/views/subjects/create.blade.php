@@ -8,26 +8,38 @@
             </div>
             <form action="{{ route('subjects.store') }}" method="POST" class="space-y-4">
                 @csrf
-                <div class="grid">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" id="title"
+                <div class="grid gap-1">
+                    <label for="title" class="font-medium text-zinc-800">Title</label>
+                    <input type="text" name="title" id="title" value="{{ old('title') }}"
                         class="py-2 px-4 rounded border focus:outline-none">
+                    @error('title')
+                        <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="grid grid-cols-2 gap-2">
-                    <div class="grid">
-                        <label for="level">Level</label>
-                        <input type="text" name="level" id="level"
+                    <div class="grid gap-1">
+                        <label for="level" class="font-medium text-zinc-800">Level</label>
+                        <input type="text" name="level" id="level" value="{{ old('level') }}"
                             class="py-2 px-4 rounded border focus:outline-none">
+                        @error('level')
+                            <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                        @enderror
                     </div>
-                    <div class="grid">
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject"
+                    <div class="grid gap-1">
+                        <label for="subject" class="font-medium text-zinc-800">Subject</label>
+                        <input type="text" name="subject" id="subject" value="{{ old('subject') }}"
                             class="py-2 px-4 rounded border focus:outline-none">
+                        @error('subject')
+                            <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                        @enderror
                     </div>
                 </div>
                 <div class="space-y-1">
-                    <label for="content">Content</label>
+                    <label for="content" class="font-medium text-zinc-800">Content</label>
                     <textarea name="content" id="content"></textarea>
+                    @error('content')
+                        <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                    @enderror
                 </div>
                 <button
                     class="py-2 font-bold px-6 rounded bg-indigo-100 text-indigo-600 text-sm">Submit</button>

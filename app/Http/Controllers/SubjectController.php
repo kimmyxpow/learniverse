@@ -22,10 +22,10 @@ class SubjectController extends Controller
     public function store(Request $request)
     {
         $validatedData =  $request->validate([
-            'subject' => ['required'],
-            'title' => ['required'],
-            'level' => ['required'],
-            'content' => ['required'],
+            'subject' => ['required', 'max:255'],
+            'title' => ['required', 'max:255'],
+            'level' => ['required', 'max:255'],
+            'content' => ['required', 'max:65535'],
         ]);
 
         Subject::create($validatedData);
@@ -54,10 +54,10 @@ class SubjectController extends Controller
     public function update(Request $request, Subject $subject)
     {
         $validatedData =  $request->validate([
-            'subject' => ['required'],
-            'title' => ['required'],
-            'level' => ['required'],
-            'content' => ['required'],
+            'subject' => ['required', 'max:255'],
+            'title' => ['required', 'max:255'],
+            'level' => ['required', 'max:255'],
+            'content' => ['required', 'max:65535'],
         ]);
 
         $subject->update($validatedData);

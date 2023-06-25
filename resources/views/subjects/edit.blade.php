@@ -9,26 +9,38 @@
             <form action="{{ route('subjects.update', $subject->id) }}" method="POST" class="space-y-4">
                 @csrf
                 @method('PUT')
-                <div class="grid">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" id="title" value="{{ $subject->title }}"
+                <div class="grid gap-1">
+                    <label for="title" class="font-medium text-zinc-800">Title</label>
+                    <input type="text" name="title" id="title" value="{{ old('subject', $subject->title) }}"
                         class="py-2 px-4 rounded border focus:outline-none">
+                        @error('title')
+                        <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="grid grid-cols-2 gap-2">
-                    <div class="grid">
-                        <label for="level">Level</label>
-                        <input type="text" name="level" id="level" value="{{ $subject->level }}"
+                    <div class="grid gap-1">
+                        <label for="level" class="font-medium text-zinc-800">Level</label>
+                        <input type="text" name="level" id="level" value="{{ old('level', $subject->level) }}"
                             class="py-2 px-4 rounded border focus:outline-none">
+                            @error('title')
+                        <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                    @enderror
                     </div>
-                    <div class="grid">
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" value="{{ $subject->subject }}"
+                    <div class="grid gap-1">
+                        <label for="subject" class="font-medium text-zinc-800">Subject</label>
+                        <input type="text" name="subject" id="subject" value="{{ old('subject', $subject->subject) }}"
                             class="py-2 px-4 rounded border focus:outline-none">
+                            @error('title')
+                        <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                    @enderror
                     </div>
                 </div>
                 <div class="space-y-1">
-                    <label for="content">Content</label>
-                    <textarea name="content" id="content">{{ $subject->content }}</textarea>
+                    <label for="content" class="font-medium text-zinc-800">Content</label>
+                    <textarea name="content" id="content">{{ old('content', $subject->content) }}</textarea>
+                    @error('title')
+                        <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
+                    @enderror
                 </div>
                 <button
                     class="py-2 font-bold px-6 rounded bg-indigo-100 text-indigo-600 text-sm">Submit</button>

@@ -7,7 +7,7 @@
                 class="py-2 font-bold px-6 rounded bg-indigo-100 text-indigo-600 text-sm">Create</a>
         </div>
         @if (session()->has('success'))
-            <div class="py-2 px-4 rounded bg-green-100 text-green-600">
+            <div class="py-2 px-4 rounded bg-green-100 text-green-600 mb-4 border border-green-600">
                 {{ session('success') }}
             </div>
         @endif
