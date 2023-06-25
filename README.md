@@ -17,6 +17,9 @@ Berikut adalah beberapa pengembangan yang direncanakan untuk Learniverse:
 1. **Validasi Input:** Menambahkan fitur validasi input pada platform untuk memastikan input yang valid dan menghindari kesalahan pengguna.
 2. **Pengembangan Fitur Rekomendasi:** Melanjutkan pengembangan fitur rekomendasi untuk meningkatkan personalisasi dan kualitas rekomendasi modul pembelajaran.
 3. **Pemperbaikan UI/UX Desain:** Fokus pada pemperbaikan UI/UX desain untuk meningkatkan pengalaman pengguna dengan tata letak yang intuitif, navigasi yang mudah, dan desain yang menarik.
+4. **Update Profile:** Menambahkan fitur update profile yang memungkinkan pengguna untuk mengatur dan memperbarui informasi profil mereka, seperti nama, foto profil, dan preferensi pengguna.
+5. **Search Modul:** Menambahkan fitur pencarian modul yang memungkinkan pengguna untuk dengan mudah mencari modul pembelajaran berdasarkan kata kunci.
+6. **Latihan Soal:** Menambahkan fitur latihan soal yang memungkinkan pengguna untuk menguji pemahaman mereka dengan latihan soal interaktif yang terkait dengan modul pembelajaran yang telah mereka pelajari.
 
 ## Cara Penggunaan
 
