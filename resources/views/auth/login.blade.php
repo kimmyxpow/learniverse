@@ -1,4 +1,4 @@
-<x-auth-layout>
+<x-auth-layout title="Learniverse - Login">
     <form action="{{ route('authenticate') }}" method="POST" class="max-w-sm bg-white p-8 rounded-lg mx-auto">
         @csrf
         <h1 class="font-black text-2xl mb-4">Selamat Datang Kembali!</h1>

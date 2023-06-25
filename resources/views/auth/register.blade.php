@@ -1,4 +1,4 @@
-<x-auth-layout>
+<x-auth-layout title="Learniverse - Register">
     <form action="{{ route('newUser') }}" method="POST" class="max-w-sm bg-white p-8 rounded-lg mx-auto">
         @csrf
         <h1 class="font-black text-2xl mb-4">Selamat Datang!</h1>
