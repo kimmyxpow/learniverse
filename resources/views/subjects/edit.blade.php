@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="Learniverse - Edit Modul {{ $subject->id }} / {{ $subject->title }}">
     <main class="pt-28 pb-10 container">
         <div class="max-w-2xl mx-auto">
             <div class="flex justify-between items-center gap-2">
