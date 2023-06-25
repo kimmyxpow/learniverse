@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="fixed top-0 inset-x-0 bg-white py-4">
+    <nav class="fixed top-0 inset-x-0 bg-white py-4 z-50">
         <div class="container flex justify-between items-center">
             <a href="/" class="text-lg text-zinc-800 font-black">Learniverse<span
                     class="text-2xl text-indigo-600">.</span></a>

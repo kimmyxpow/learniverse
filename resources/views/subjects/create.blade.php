@@ -1,7 +1,7 @@
 <x-main-layout>
     <main class="pt-28 pb-10 container">
         <div class="max-w-2xl mx-auto">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center gap-2">
                 <h1 class="text-2xl font-black mt-2 mb-4">Tambah Modul</h1>
                 <a href="{{ route('index') }}"
                     class="py-2 font-bold px-6 rounded bg-zinc-100 text-zinc-600 text-sm">Back</a>
@@ -16,7 +16,7 @@
                         <span class="text-red-600 text-sm font-medium">{{ $message }}</span>
                     @enderror
                 </div>
-                <div class="grid grid-cols-2 gap-2">
+                <div class="grid sm:grid-cols-2 gap-4">
                     <div class="grid gap-1">
                         <label for="level" class="font-medium text-zinc-800">Level</label>
                         <input type="text" name="level" id="level" value="{{ old('level') }}"

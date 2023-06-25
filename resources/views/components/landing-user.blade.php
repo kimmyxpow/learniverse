@@ -2,7 +2,7 @@
     <div class="container">
         <span class="text-zinc-600">Selamat datang {{ auth()->user()->name }}!</span>
         <h1 class="text-2xl font-black mt-2 mb-4">Rekomendasi Untukmu!</h1>
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
             @forelse ($modules as $row)
                 <a href="{{ route('subjects.show', $row->id) }}" class="p-6 rounded-xl border">
                     <h2 class="text-xl font-bold mb-1">{{ $row->title }}</h2>
