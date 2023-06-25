@@ -26,7 +26,9 @@
                 @forelse ($subjects as $row)
                     <tr>
                         <td class="text-zinc-600 py-4 border-b px-6 text-center">{{ $loop->iteration }}</td>
-                        <td class="text-zinc-600 py-4 border-b px-6">{{ $row->created_at }}</td>
+                        <td class="text-zinc-600 py-4 border-b px-6">{{ $row->created_at->diffForHumans() }} <span
+                                class="text-xs py-1 px-2 rounded-full bg-zinc-800 text-white whitespace-nowrap">{{ $row->created_at }}</span>
+                        </td>
                         <td class="text-zinc-600 py-4 border-b px-6">{{ $row->subject }}</td>
                         <td class="text-zinc-600 py-4 border-b px-6">{{ $row->title }}</td>
                         <td class="text-zinc-600 py-4 border-b px-6">{{ $row->level }}</td>
