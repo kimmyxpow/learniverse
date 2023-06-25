@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="Learniverse - Modul berdasarkan mata pelajaran {{ $subject }}">
     <main class="pt-28 pb-10">
         <div class="container">
             <div class="flex justify-between items-center mb-4 gap-2">

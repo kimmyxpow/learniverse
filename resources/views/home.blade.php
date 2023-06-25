@@ -1,4 +1,4 @@
-<x-main-layout>
+<x-main-layout title="Learniverse - Platform E-Learning Terlengkap">
     @if (auth()->check())
         @role('user')
             <x-landing-user />
