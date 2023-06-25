@@ -32,6 +32,8 @@
                         <td class="text-zinc-600 py-4 border-b px-6">{{ $row->level }}</td>
                         <td class="text-zinc-600 py-4 border-b px-6">
                             <div class="flex gap-1">
+                                <a href="{{ route('subjects.show', $row->id) }}"
+                                    class="py-2 font-bold px-6 rounded bg-zinc-100 text-zinc-600 text-sm">Preview</a>
                                 <a href="{{ route('subjects.edit', $row->id) }}"
                                     class="py-2 font-bold px-6 rounded bg-amber-100 text-amber-600 text-sm">Edit</a>
                                 <form action="{{ route('subjects.destroy', $row->id) }}" method="POST"
