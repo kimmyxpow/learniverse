@@ -20,6 +20,7 @@ Berikut adalah beberapa pengembangan yang direncanakan untuk Learniverse:
 4. **Update Profile:** Menambahkan fitur update profile yang memungkinkan pengguna untuk mengatur dan memperbarui informasi profil mereka, seperti nama, foto profil, dan preferensi pengguna.
 5. **Search Modul:** Menambahkan fitur pencarian modul yang memungkinkan pengguna untuk dengan mudah mencari modul pembelajaran berdasarkan kata kunci.
 6. **Latihan Soal:** Menambahkan fitur latihan soal yang memungkinkan pengguna untuk menguji pemahaman mereka dengan latihan soal interaktif yang terkait dengan modul pembelajaran yang telah mereka pelajari.
+7. **Manajemen User oleh Admin:** Menambahkan fitur manajemen user oleh admin yang memungkinkan administrator untuk mengelola pengguna, termasuk pembuatan akun baru, pengaturan hak akses, dan penghapusan akun.
 
 ## Cara Penggunaan
 
