@@ -60,13 +60,13 @@ Berikut adalah langkah-langkah untuk menginstal Learniverse di lingkungan lokal:
 1. Clone repositori Learniverse ke direktori lokal:
 
 ```bash
-git clone https://github.com/abnvlf/sevima-learniverse.git
+git clone https://github.com/abnvlf/sevima-learniverse.git 
 ```
 
 2. Masuk ke direktori Learniverse:
 
 ```bash
-cd learniverse
+cd sevima-learniverse
 ```
 
 3. Jalankan perintah composer install untuk menginstal semua dependensi PHP:
